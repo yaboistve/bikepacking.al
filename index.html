@@ -1,337 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>Bikepacking Albania | Cycling Adventures by Steve</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- 🌍 META SEO -->
-  <meta name="description" content="Explore Albania's breathtaking landscapes through Steve's bikepacking adventures. Routes, photos, and stories from across the country." />
-  <meta name="keywords" content="bikepacking, Albania, cycling, adventures, travel, outdoor, photography, routes" />
-  <meta name="author" content="Steve" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- SEO -->
+    <meta name="description" content="Bikepacking Albania - routes, photos, and stories from Steve's adventures exploring Albania by bike." />
+    <meta name="keywords" content="bikepacking, Albania, cycling, travel, adventure, photography" />
+    <meta name="author" content="Steve" />
 
-  <!-- 🧭 Open Graph (Facebook, LinkedIn, etc.) -->
-  <meta property="og:title" content="Bikepacking Albania | Cycling Adventures by Steve" />
-  <meta property="og:description" content="Join Steve as he explores Albania's trails and landscapes on two wheels — stories, photos, and cycling routes." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://bikepacking.al/" />
-  <meta property="og:image" content="https://bikepacking.al/img/bovilla_view.jpg" />
+    <title>Bikepacking Albania</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
 
-  <!-- 🐦 Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Bikepacking Albania | Cycling Adventures by Steve" />
-  <meta name="twitter:description" content="Bikepacking adventures and cycling routes across Albania by Steve." />
-  <meta name="twitter:image" content="https://bikepacking.al/img/bovilla_view.jpg" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontAwesome.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
 
-  <!-- 🧩 Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png" />
-  <link rel="apple-touch-icon" href="img/favicon.png" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
-  <!-- SEO Tag -->
-  <link rel="canonical" href="https://bikepacking.al/" />
-  <meta name="robots" content="index, follow" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a2e0ad1e52.js" crossorigin="anonymous"></script>
+  </head>
 
-  
-  <!-- 🖋 Fonts & Styles -->
-  <link href="https://fonts.googleapis.com/css?family=Kanit:200,400,600,800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/templatemo-style.css" />
-</head>
+  <body>
+    <!-- ===== NAVIGATION ===== -->
+    <header>
+      <nav class="sticky-nav">
+        <div class="logo">
+          <a href="#">BIKEPACKING <em>ALBANIA</em></a>
+        </div>
+        <div class="menu-icon" id="menu-icon"><span></span></div>
+      </nav>
 
-<body>
+      <!-- ===== HERO SECTION ===== -->
+      <div id="video-container">
+        <video autoplay muted loop id="bg-video">
+          <source src="videos/yourvideo.mp4" type="video/mp4" />
+        </video>
+        <div class="video-overlay"></div>
 
-  <!-- ======================
-       NAVIGATION
-       ====================== -->
-  <nav class="sticky-nav">
-    <div class="logo">
-      <a href="index.html">BIKE<em>PACKING</em> ALBANIA</a>
-    </div>
-    <div class="menu-icon">
-      <span></span>
-    </div>
-  </nav>
-
-  <!-- ======================
-       HERO VIDEO
-       ====================== -->
-  <div id="video-container">
-    <div class="video-overlay"></div>
-    <div class="video-content">
-      <div class="inner">
-        <h1>BIKEPACKING <em>ALBANIA</em></h1>
-        <p>HEY, I'M STEVE AND THIS IS MY BLOG. FEEL FREE TO LOOK AROUND.</p>
-        <p>Check out some of my bike trips below</p>
-        <div class="scroll-icon">
-          <a class="scrollTo" data-scrollTo="portfolio" href="#"><img src="img/scroll-icon.png" alt="scroll icon"></a>
+        <div class="video-content">
+          <div class="inner">
+            <h1>Hey, I'm Steve and this is my blog.</h1>
+            <p>Feel free to look around. Check out some of my bike trips below.</p>
+            <a href="#portfolio" class="scroll-down">
+              <i class="fa fa-angle-down"></i>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <video autoplay loop muted playsinline>
-      <source src="sunset_cycling.mp4" type="video/mp4" />
-    </video>
-  </div>
+    </header>
 
-  <!-- ======================
-       ABOUT SECTION
-       ====================== -->
-  <section id="about" class="about-section">
-    <div class="container">
-      <h2>About This Project</h2>
-      <p>I'm Steve — exploring Albania one trail at a time. This site shares my favorite routes, photos, and experiences from bikepacking adventures across the country.</p>
-    </div>
-  </section>
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about-section">
+      <div class="container text-center py-5">
+        <h2 class="section-title">About This Project</h2>
+        <p class="section-desc">
+          I'm Steve — exploring Albania one trail at a time. This site shares my favorite routes, photos, and experiences from bikepacking adventures across the country.
+        </p>
+      </div>
+    </section>
 
-  <!-- ======================
-       PORTFOLIO GRID
-       ====================== -->
-  <section id="portfolio" class="full-screen-portfolio">
-    <div class="container-fluid">
-      <div class="portfolio-grid">
-
-<div class="full-screen-portfolio" id="portfolio">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-4 col-sm-6">
-        <div class="portfolio-item">
-          <a href="img/bovilla_view.jpg" data-lightbox="image-1">
+    <!-- ===== PORTFOLIO SECTION ===== -->
+    <section id="portfolio" class="full-screen-portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 portfolio-item">
             <div class="thumb">
+              <div class="image">
+                <img src="img/bovilla.jpg" alt="Bovilla Lake" />
+              </div>
               <div class="hover-effect">
                 <div class="hover-content">
-                  <h1>BOVILLA <em>LAKE</em></h1>
-                  <p>WINDY BUT LOVELY</p>
+                  <h1>Bovilla Lake</h1>
+                  <p>Windy but lovely</p>
                 </div>
               </div>
-              <div class="image">
-                <img src="img/bovilla_view.jpg" alt="Bovilla Lake" />
-              </div>
             </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+          </div>
 
-<div class="full-screen-portfolio" id="portfolio">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-4 col-sm-6">
-        <div class="portfolio-item">
-          <a href="img/preza-castle.jpg" data-lightbox="image-1">
+          <div class="col-md-6 portfolio-item">
             <div class="thumb">
+              <div class="image">
+                <img src="img/kruja.jpg" alt="Kruja Castle" />
+              </div>
               <div class="hover-effect">
                 <div class="hover-content">
-                  <h1>PREZA <em>CASTLE</em></h1>
-                  <p>PROTECTED BY STONES</p>
+                  <h1>Kruja Castle</h1>
+                  <p>Historic climb to the fortress</p>
                 </div>
               </div>
-              <div class="image">
-                <img src="img/preza-castle.jpg" alt="Preza Castle" />
-              </div>
             </div>
-          </a>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
+    </section>
 
-<div class="full-screen-portfolio" id="portfolio">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-4 col-sm-6">
-        <div class="portfolio-item">
-          <a href="img/dajti_peak.jpg" data-lightbox="image-1">
-            <div class="thumb">
-              <div class="hover-effect">
-                <div class="hover-content">
-              <h1>DAJTI <em>MOUNTAIN</em></h1>
-              <p>Views from Tirana</p>
-                </div>
-              </div>
-              <div class="image">
-                <img src="img/dajti_peak.jpg" alt="Dajti Mountain" />
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+    <!-- ===== FOOTER ===== -->
+    <footer class="text-center py-4">
+      <p>&copy; 2025 Bikepacking Albania | Designed by Steve</p>
+    </footer>
 
-<div class="full-screen-portfolio" id="portfolio">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-4 col-sm-6">
-        <div class="portfolio-item">
-          <a href="img/belshi_lake.jpg" data-lightbox="image-1">
-            <div class="thumb">
-              <div class="hover-effect">
-                <div class="hover-content">
-              <h1>BELSHI <em>LAKES</em></h1>
-              <p>Bikepaths + Lakes = Happy Soul</p>
-                </div>
-              </div>
-              <div class="image">
-                <img src="belshi_lake.jpg" alt="BELSHI LAKES" />
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+    <!-- ===== JS ===== -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-<div class="full-screen-portfolio" id="portfolio">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-4 col-sm-6">
-        <div class="portfolio-item">
-          <a href="img/arber_road.jpg" data-lightbox="image-1">
-            <div class="thumb">
-              <div class="hover-effect">
-                <div class="hover-content">
-              <h1>Arbër's <em>Road</em></h1>
-              <p>Sunsets and Bikes</p>
-                </div>
-              </div>
-              <div class="image">
-                <img src="arber_road.jpg" alt="Arbër's Road" />
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+    <script>
+      // Sticky nav background on scroll
+      window.addEventListener("scroll", () => {
+        const nav = document.querySelector(".sticky-nav");
+        nav.classList.toggle("scrolled", window.scrollY > 10);
+      });
 
-<div class="full-screen-portfolio" id="portfolio">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-4 col-sm-6">
-        <div class="portfolio-item">
-          <a href="img/krraba_pass.jpg" data-lightbox="image-1">
-            <div class="thumb">
-              <div class="hover-effect">
-                <div class="hover-content">
-              <h1>Krraba's <em>Pass</em></h1>
-              <p>Sunsets and Bikes</p>
-                </div>
-              </div>
-              <div class="image">
-                <img src="krraba_pass.jpg" alt="Krraba's Pass" />
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="full-screen-portfolio" id="portfolio">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-4 col-sm-6">
-        <div class="portfolio-item">
-          <a href="img/nivice.jpeg" data-lightbox="image-1">
-            <div class="thumb">
-              <div class="hover-effect">
-                <div class="hover-content">
-              <h1>Nivicë <em>Village</em></h1>
-              <p>Deep into the South</p>
-                </div>
-              </div>
-              <div class="image">
-                <img src="nivice.jpeg" alt="Nivicë Village" />
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-        
-<div class="full-screen-portfolio" id="portfolio">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-4 col-sm-6">
-        <div class="portfolio-item">
-          <a href="img/tirana_lake.jpg" data-lightbox="image-1">
-            <div class="thumb">
-              <div class="hover-effect">
-                <div class="hover-content">
-              <h1>Tirana <em>Lake</em></h1>
-              <p>The cooler Central Park</p>
-                </div>
-              </div>
-              <div class="image">
-                <img src="tirana_lake.jpg" alt="Tirana Lake" />
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="full-screen-portfolio" id="portfolio">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-4 col-sm-6">
-        <div class="portfolio-item">
-          <a href="img/durres.jpg" data-lightbox="image-1">
-            <div class="thumb">
-              <div class="hover-effect">
-                <div class="hover-content">
-              <h1>Durrës <em>Beach</em></h1>
-              <p>Up for a swim?</p>
-                </div>
-              </div>
-              <div class="image">
-                <img src="durres.jpg" alt="Durrës Beach" />
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================
-       FOOTER
-       ====================== -->
-  <footer>
-    <div class="container-fluid">
-      <div class="col-md-12">
-        <p>Copyright © 2025 BIKEPACKING ALBANIA</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- ======================
-       STICKY NAV SCRIPT
-       ====================== -->
-  <script>
-    window.addEventListener('scroll', () => {
-      const nav = document.querySelector('.sticky-nav');
-      if (window.scrollY > 50) nav.classList.add('scrolled');
-      else nav.classList.remove('scrolled');
-    });
-  </script>
-
-</body>
+      // Mobile menu toggle
+      const menuIcon = document.getElementById("menu-icon");
+      const overlayMenu = document.querySelector(".overlay-menu");
+      menuIcon?.addEventListener("click", () => {
+        menuIcon.classList.toggle("active");
+        overlayMenu.classList.toggle("open");
+      });
+    </script>
+  </body>
 </html>
-
-
