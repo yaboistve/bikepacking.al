@@ -1,233 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Bikepacking Albania | Steve</title>
 
-    <!-- SEO -->
-    <meta
-      name="description"
-      content="Bikepacking Albania - Steve's travel blog exploring Albania by bike, with routes, stories, and photos."
-    />
-    <meta
-      name="keywords"
-      content="bikepacking, Albania, cycling, adventure, travel, outdoor, routes, photography"
-    />
-    <meta name="author" content="Steve" />
+  <meta name="description" content="Bikepacking Albania - Steve's bikepacking routes, photos and stories." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Bikepacking Albania</title>
-    <link rel="icon" type="image/png" href="img/favicon.png" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/favicon.png" />
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/fontAwesome.css" />
-    <link rel="stylesheet" href="css/templatemo-style.css" />
+  <!-- Fonts & styles -->
+  <link href="https://fonts.googleapis.com/css?family=Kanit:200,300,400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fontAwesome.css">
+  <link rel="stylesheet" href="css/templatemo-style.css">
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <!-- Lightbox CSS if you use it (keep if present) -->
+  <!-- <link rel="stylesheet" href="css/lightbox.css"> -->
+</head>
+<body>
 
-  <body>
-    <!-- ===== NAVBAR ===== -->
-    <nav class="sticky-nav">
-      <div class="logo">
-        <a href="#">BIKE<em>PACKING</em> ALBANIA</a>
+  <!-- NAV -->
+  <nav class="sticky-nav" role="navigation" aria-label="Main navigation">
+    <div class="logo">
+      <a href="index.html">BIKE<em>PACKING</em> ALBANIA</a>
+    </div>
+    <div class="menu-icon" id="menu-icon" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- OVERLAY MENU (required by the JS) -->
+  <section class="overlay-menu" aria-hidden="true">
+    <div class="container">
+      <div class="row">
+        <div class="main-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog Entries</a></li>
+            <li><a href="single-post.html">Single Post</a></li>
+          </ul>
+          <p>I am still a work in progress, please be kind :)</p>
+        </div>
       </div>
-      <div class="menu-icon" id="menu-icon"><span></span></div>
-    </nav>
-<!-- Overlay menu (paste right after your nav) -->
-<section class="overlay-menu" aria-hidden="true">
-  <div class="container">
-    <div class="row">
-      <div class="main-menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="blog.html">Blog Entries</a></li>
-          <li><a href="single-post.html">Single Post</a></li>
-        </ul>
-        <p>I am still a work in progress, please be kind :)</p>
+    </div>
+  </section>
+
+  <!-- HERO / BACKGROUND VIDEO -->
+  <div id="video-container">
+    <video autoplay muted loop playsinline id="bg-video" preload="auto">
+      <source src="sunset_cycling.mp4" type="video/mp4">
+      <!-- fallback -->
+    </video>
+
+    <div class="video-overlay"></div>
+
+    <div class="video-content">
+      <div class="inner">
+        <h1>HEY, I'M STEVE AND THIS IS MY BLOG.</h1>
+        <p>Feel free to look around — check out some of my bike trips below.</p>
+        <div class="scroll-icon">
+          <a class="scrollTo" data-scrollTo="portfolio" href="#"><img src="img/scroll-icon.png" alt="scroll"></a>
+        </div>
       </div>
     </div>
   </div>
-</section>
-    <!-- ===== HERO SECTION ===== -->
-    <div id="video-container">
-      <video autoplay muted loop id="bg-video">
-        <source src="sunset_cycling.mp4" type="video/mp4" />
-      </video>
-      <div class="video-overlay"></div>
 
-      <div class="video-content">
-        <div class="inner">
-          <h1>HEY, I'M STEVE AND THIS IS MY BLOG.</h1>
-          <p>Feel free to look around — check out some of my bike trips below.</p>
-          <a href="#portfolio" class="scroll-down">
-            <i class="fa fa-angle-down"></i>
-          </a>
+  <!-- PORTFOLIO (original bootstrap grid preserved) -->
+  <div class="full-screen-portfolio" id="portfolio">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- keep original 9 items (example below — ensure these filenames exist in /img) -->
+        <div class="col-md-4 col-sm-6">
+          <div class="portfolio-item">
+            <a href="img/bovilla_view.jpg" data-lightbox="image-1">
+              <div class="thumb">
+                <div class="hover-effect">
+                  <div class="hover-content">
+                    <h1>BOVILLA <em>LAKE</em></h1>
+                    <p>WINDY BUT LOVELY</p>
+                  </div>
+                </div>
+                <div class="image">
+                  <img src="img/bovilla_view.jpg" alt="Bovilla Lake">
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
+
+        <!-- Repeat other items (preza, dajti, belshi, arber, krraba, nivice, tirana_lake, durres) -->
+        <div class="col-md-4 col-sm-6">
+          <div class="portfolio-item">
+            <a href="img/preza-castle.jpg" data-lightbox="image-1">
+              <div class="thumb">
+                <div class="hover-effect">
+                  <div class="hover-content">
+                    <h1>PREZA <em>CASTLE</em></h1>
+                    <p>Great history</p>
+                  </div>
+                </div>
+                <div class="image">
+                  <img src="img/preza-castle.jpg" alt="Preza Castle">
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="portfolio-item">
+            <a href="img/dajti_peak.jpg" data-lightbox="image-1">
+              <div class="thumb">
+                <div class="hover-effect">
+                  <div class="hover-content">
+                    <h1>DAJTI <em>MOUNTAIN</em></h1>
+                    <p>VIEWS FROM TIRANA</p>
+                  </div>
+                </div>
+                <div class="image">
+                  <img src="img/dajti_peak.jpg" alt="Dajti Peak">
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="portfolio-item">
+            <a href="img/belshi_lake.jpg" data-lightbox="image-1">
+              <div class="thumb">
+                <div class="hover-effect">
+                  <div class="hover-content">
+                    <h1>BELSHI <em>LAKES</em></h1>
+                    <p>BIKEPATHS + LAKES = HAPPY SOUL</p>
+                  </div>
+                </div>
+                <div class="image">
+                  <img src="img/belshi_lake.jpg" alt="Belshi Lakes">
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="portfolio-item">
+            <a href="img/arber_road.jpg" data-lightbox="image-1">
+              <div class="thumb">
+                <div class="hover-effect">
+                  <div class="hover-content">
+                    <h1>ARBËR'S <em>ROAD</em></h1>
+                    <p>SUNSETS AND BIKES</p>
+                  </div>
+                </div>
+                <div class="image">
+                  <img src="img/arber_road.jpg" alt="Arber Road">
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="portfolio-item">
+            <a href="img/krraba_pass.jpg" data-lightbox="image-1">
+              <div class="thumb">
+                <div class="hover-effect">
+                  <div class="hover-content">
+                    <h1>KRRABA'S <em>PASS</em></h1>
+                    <p>ABANDONED BUT NOT FORGOTTEN</p>
+                  </div>
+                </div>
+                <div class="image">
+                  <img src="img/krraba_pass.jpg" alt="Krraba Pass">
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="portfolio-item">
+            <a href="img/nivice.jpeg" data-lightbox="image-1">
+              <div class="thumb">
+                <div class="hover-effect">
+                  <div class="hover-content">
+                    <h1>NIVICË <em>VILLAGE</em></h1>
+                    <p>DEEP INTO THE SOUTH</p>
+                  </div>
+                </div>
+                <div class="image">
+                  <img src="img/nivice.jpeg" alt="Nivice Village">
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="portfolio-item">
+            <a href="img/tirana_lake.jpg" data-lightbox="image-1">
+              <div class="thumb">
+                <div class="hover-effect">
+                  <div class="hover-content">
+                    <h1>TIRANA'S <em>LAKE</em></h1>
+                    <p>THE COOLER CENTRAL PARK</p>
+                  </div>
+                </div>
+                <div class="image">
+                  <img src="img/tirana_lake.jpg" alt="Tirana Lake">
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="portfolio-item">
+            <a href="img/durres.jpg" data-lightbox="image-1">
+              <div class="thumb">
+                <div class="hover-effect">
+                  <div class="hover-content">
+                    <h1>DURRËS <em>BEACH</em></h1>
+                    <p>UP FOR A SWIM?</p>
+                  </div>
+                </div>
+                <div class="image">
+                  <img src="img/durres.jpg" alt="Durres Beach">
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div><!-- /#portfolio -->
+
+  <footer>
+    <div class="container-fluid">
+      <div class="col-md-12">
+        <p>Copyright &copy; 2025 BIKEPACKING ALBANIA</p>
       </div>
     </div>
+  </footer>
 
-    <!-- ===== PORTFOLIO SECTION ===== -->
-    <section id="portfolio" class="full-screen-portfolio">
-      <div class="container-fluid">
-        <div class="row">
-          <!-- 1 -->
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <div class="thumb">
-              <div class="image">
-                <img src="img/bovilla_view.jpg" alt="Bovilla Lake" />
-              </div>
-              <div class="hover-effect">
-                <div class="hover-content">
-                  <h1>Bovilla <em>Lake</em></h1>
-                  <p>Windy but lovely</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 2 -->
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <div class="thumb">
-              <div class="image">
-                <img src="img/preza-castle.jpg" alt="Preza Castle" />
-              </div>
-              <div class="hover-effect">
-                <div class="hover-content">
-                  <h1>Preza <em>Castle</em></h1>
-                  <p>Great history</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 3 -->
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <div class="thumb">
-              <div class="image">
-                <img src="img/dajti_peak.jpg" alt="Dajti Mountain" />
-              </div>
-              <div class="hover-effect">
-                <div class="hover-content">
-                  <h1>Dajti <em>Mountain</em></h1>
-                  <p>Views from Tirana</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 4 -->
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <div class="thumb">
-              <div class="image">
-                <img src="img/belshi_lake.jpg" alt="Belshi Lakes" />
-              </div>
-              <div class="hover-effect">
-                <div class="hover-content">
-                  <h1>Belshi <em>Lakes</em></h1>
-                  <p>Bikepaths + lakes = happy soul</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 5 -->
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <div class="thumb">
-              <div class="image">
-                <img src="img/arber_road.jpg" alt="Arber's Road" />
-              </div>
-              <div class="hover-effect">
-                <div class="hover-content">
-                  <h1>Arbër's <em>Road</em></h1>
-                  <p>Sunsets and bikes</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 6 -->
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <div class="thumb">
-              <div class="image">
-                <img src="img/krraba_pass.jpg" alt="Krraba Pass" />
-              </div>
-              <div class="hover-effect">
-                <div class="hover-content">
-                  <h1>Krraba's <em>Pass</em></h1>
-                  <p>Abandoned but not forgotten</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 7 -->
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <div class="thumb">
-              <div class="image">
-                <img src="img/nivice.jpeg" alt="Nivice Village" />
-              </div>
-              <div class="hover-effect">
-                <div class="hover-content">
-                  <h1>Nivicë <em>Village</em></h1>
-                  <p>Deep into the South</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 8 -->
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <div class="thumb">
-              <div class="image">
-                <img src="img/tirana_lake.jpg" alt="Tirana Lake" />
-              </div>
-              <div class="hover-effect">
-                <div class="hover-content">
-                  <h1>Tirana's <em>Lake</em></h1>
-                  <p>The cooler Central Park</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 9 -->
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <div class="thumb">
-              <div class="image">
-                <img src="img/durres.jpg" alt="Durres Beach" />
-              </div>
-              <div class="hover-effect">
-                <div class="hover-content">
-                  <h1>Durrës <em>Beach</em></h1>
-                  <p>Up for a swim?</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
-    <footer class="text-center py-4">
-      <p>&copy; 2025 Bikepacking Albania | Designed by Steve</p>
-    </footer>
-
-    <!-- ===== JS ===== -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-      // Sticky nav effect
-      window.addEventListener("scroll", () => {
-        const nav = document.querySelector(".sticky-nav");
-        nav.classList.toggle("scrolled", window.scrollY > 10);
-      });
-    </script>
-  </body>
+  <!-- SCRIPTS: jQuery, plugins (lightbox), then main -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
 </html>
-
